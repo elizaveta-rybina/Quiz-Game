@@ -38,6 +38,7 @@ restartButton.addEventListener('click', restartQuiz)
 function startQuiz() {
 	currentQuestionIndex = 0
 	scoreElement.textContent = 0
+	score = 0
 	startScreen.classList.remove('active')
 	quizScreen.classList.add('active')
 
@@ -46,6 +47,7 @@ function startQuiz() {
 
 function restartQuiz() {
 	resultScreen.classList.remove('active')
+
 	startQuiz()
 }
 
@@ -59,7 +61,7 @@ function showQuestion() {
 	progressBar.style.width = `${progressPercent}%`
 
 	questionText.textContent = currentQuestion.question
-	
+
 	answersContainer.innerHTML = ''
 	currentQuestion.answers.forEach(answer => {
 		const button = document.createElement('button')

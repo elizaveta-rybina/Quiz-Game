@@ -75,10 +75,9 @@ npx http-server
 
 ## Project Demo
 
-<video width="600" controls>
-  <source src="demo.mov" type="video/quicktime">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/52c74988-654d-4b97-82a5-58a3606f1930
+
+
 
 ```
 Quiz-Game/

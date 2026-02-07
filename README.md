@@ -75,9 +75,10 @@ npx http-server
 
 ## Project Demo
 
-![Quiz Game Demo](demo.gif)
-
-## Project Structure
+<video width="600" controls>
+  <source src="demo.mov" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
 
 ```
 Quiz-Game/

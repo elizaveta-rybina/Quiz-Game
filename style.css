@@ -1,13 +1,21 @@
+:root {
+	--primary: #e86a33;
+	--primary-light: #f8f0e5;
+	--primary-medium: #eadbc8;
+	--text-primary: #333;
+	--text-secondary: #666;
+}
+
 /* basic reset */
 
 * {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body{
-	background-color: antiquewhite;	
+	background-color: antiquewhite;   
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -17,7 +25,7 @@ body{
 }
 
 .container{
-	background-color: white;
+	background-color: #fff;
 	border-radius: 1rem;
 	box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
 	width: 100%;
@@ -36,24 +44,28 @@ body{
 	display: block;
 }
 
+/* Start Screen */
+
 #start-screen h1{
-	color: #e86a33;
+	color: var(--primary);
 	margin-bottom: 20px;
 	font-size: 2.5rem;
 }
 
 #start-screen p{
-	color: #666;
+	color: var(--text-secondary);
 	font-size: 1.1rem;
 	margin-bottom: 30px;
 }
+
+/* Quiz Screen */
 
 .quiz-header{
 	margin-bottom: 2rem;
 }
 
 #question-text{
-	color: #333;
+	color: var(--text-primary);
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
 	line-height: 1.4;
@@ -63,7 +75,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	font-size: 1rem;
-	color: #666;
+	color: var(--text-secondary);
 	margin-bottom: 10px;
 }
 
@@ -75,9 +87,9 @@ body{
 }
 
 .answer-btn{
-	background-color: #f8f0e5;
-	color: #333;
-	border: 2px solid #eadbc8;
+	background-color: var(--primary-light);
+	color: var(--text-primary);
+	border: 2px solid var(--primary-medium);
 	border-radius: 10px;
 	padding: 1rem;
 	cursor: pointer;
@@ -86,7 +98,7 @@ body{
 }
 
 .answer-btn:hover{
-	background-color: #eadbc8;
+	background-color: var(--primary-medium);
 	border-color: #dac0ae;
 }
 
@@ -104,7 +116,7 @@ body{
 
 .progress-bar{
 	height: 10px;
-	background-color: #f8f0e5;
+	background-color: var(--primary-light);
 	border-radius: 5px;
 	overflow: hidden;
 	margin-top: 20px;
@@ -112,7 +124,7 @@ body{
 
 .progress {
 	height: 100%;
-	background-color: #e86a33;
+	background-color: var(--primary);
 	width: 0%;
 	transition: width 0.3s ease;
 }
@@ -120,12 +132,12 @@ body{
 /* Result Screen */
 
 #result-screen h1{
-	color: #e86a33;
+	color: var(--primary);
 	margin-bottom: 30px;
 }
 
 .result-info {
-	background-color: #f8f0e5;
+	background-color: var(--primary-light);
 	border-radius: 10px;
 	padding: 20px;
 	margin-bottom: 30px;
@@ -133,19 +145,19 @@ body{
 
 .result-info p{
 	font-size: 1.2rem;
-	color: #e86a33;
+	color: var(--primary);
 	font-weight: 600;
 }
 
 #result-message{
 	font-size: 1.1rem;
-	color: #333;
+	color: var(--text-primary);
 	margin-top: 15px;
 }
 
 button {
-	background-color: #e86a33;
-	color: white;
+	background-color: var(--primary);
+	color: #fff;
 	border: none;
 	border-radius: 10px;
 	padding: 15px 30px;
@@ -167,5 +179,4 @@ button:hover {
 	#start-screen h1{
 		font-size: 1.8rem;
 	}
-
 }
